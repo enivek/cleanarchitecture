@@ -38,6 +38,7 @@ namespace Clean.Domain.Model
             {
                 StringGuard.AssertStringValid(value, 2, 500, "text");
                 _text = value;
+            }
         }
 
         public override UniqueId GetId()

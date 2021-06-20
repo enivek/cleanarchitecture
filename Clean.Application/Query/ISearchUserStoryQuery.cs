@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using Clean.Domain.Model;
+using System.Collections.Generic;
 
 namespace Clean.Application.Query
 {

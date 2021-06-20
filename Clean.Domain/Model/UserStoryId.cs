@@ -2,10 +2,10 @@
 
 namespace Clean.Domain.Model
 {
-    public class UseCaseId : UniqueId
+    public class UserStoryId : UniqueId
     {
-        public UseCaseId() : base(0) { }
+        public UserStoryId() : base(0) { }
 
-        public UseCaseId(int value) : base(value) { }
+        public UserStoryId(int value) : base(value) { }
     }
 }
