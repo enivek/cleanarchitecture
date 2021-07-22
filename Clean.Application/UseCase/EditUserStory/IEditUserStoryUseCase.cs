@@ -3,5 +3,7 @@
     public interface IEditUserStoryUseCase
     {
         void Execute(EditUserStoryCommand command);
+
+        void SetOutputPort(IOutputPort outputPort);
     }
 }
