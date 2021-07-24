@@ -22,32 +22,6 @@ namespace Clean.Infrastructure.Web.Controllers
         }
 
         [HttpPost]
-        public void AddUserStory(UserStory userStory)
-        {
-            var rng = new Random();
-            return Enumerable.Range(1, 5).Select(index => new WeatherForecast
-            {
-                Date = DateTime.Now.AddDays(index),
-                TemperatureC = rng.Next(-20, 55),
-                Summary = Summaries[rng.Next(Summaries.Length)]
-            })
-            .ToArray();
-        }
-
-        [HttpGet]
-        public IEnumerable<UserStory> Get()
-        {
-            var rng = new Random();
-            return Enumerable.Range(1, 5).Select(index => new WeatherForecast
-            {
-                Date = DateTime.Now.AddDays(index),
-                TemperatureC = rng.Next(-20, 55),
-                Summary = Summaries[rng.Next(Summaries.Length)]
-            })
-            .ToArray();
-        }
-
-        [HttpPost]
         public IActionResult AddUserStory(
             [FromServices] Application.UseCase.AddUserStory.IAddUserStoryUseCase useCase,
             Application.UseCase.AddUserStory.AddUserStoryCommand command)
