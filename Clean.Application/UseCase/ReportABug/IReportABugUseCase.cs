@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Clean.Application.UseCase.ReportABug
 {
-    class IAddABugUseCase
+    class IReportABugUseCase
     {
     }
 }
